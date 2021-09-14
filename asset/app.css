@@ -1,0 +1,91 @@
+.hero-section .main-navbar .navbar.hidden-navbar {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section .main-navbar .navbar.hidden-navbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section .main-navbar .navbar {
+        padding: 15px 0px;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        width: 85%;
+        right: 7.5%;
+        top: 120px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .hero-section .main-navbar .navbar:after {
+        content: "";
+        position: absolute;
+        bottom: 85%;
+        right: -23px;
+        width: 0;
+        height: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 35px solid white;
+        transform: rotate(135deg);
+    }
+}
+
+.hero-section .main-navbar .navbar a.main-navbar-link {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section .main-navbar .navbar a.main-navbar-link {
+        color: #25564b;
+        display: inline-block;
+        margin: 5px auto;
+        border-radius: 40px;
+    }
+
+    .hero-section .main-navbar .navbar a.main-navbar-link:hover {
+        background: #e6e6e6;
+        transition: 0.3s;
+    }
+}
+
+.hero-section .main-navbar .navbar a.main-navbar-link.main-navbar-link-active {
+    background: white;
+    color: #5a636c;
+    border-radius: 40px;
+    font-family: "Fraunces", serif;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section .main-navbar .navbar a.main-navbar-link.main-navbar-link-active {
+        margin-left: 0px;
+        background: #fad400;
+        display: inline-block;
+    }
+}
+
+.hero-section .main-navbar .navbar a.main-navbar-link.main-navbar-link-active:hover {
+    background: #e6e6e6;
+    transition: 0.3s;
+}
+
+.hero-cover {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 72px;
+    height: 100%;
+    font-family: "Fraunces", serif;
+    color: white;
+}
+
+.hero-cover .hero-cover-arrow {
+    margin-top: 70px;
+}
